@@ -1,7 +1,5 @@
 # Tmux Kullanım Rehberi
 
-Tmux, terminal multiplexer olarak bilinen güçlü bir araçtır. Bu rehber, tmux'un temel kullanımını ve bazı yararlı ipuçlarını içermektedir.
-
 ## İçindekiler
 
 1. [Tmux Nedir?](#tmux-nedir)
@@ -10,26 +8,21 @@ Tmux, terminal multiplexer olarak bilinen güçlü bir araçtır. Bu rehber, tmu
 4. [Oturumlar (Sessions)](#oturumlar-sessions)
 5. [Pencereler (Windows)](#pencereler-windows)
 6. [Bölmeler (Panes)](#bölmeler-panes)
-7. [Kopyalama Modu](#kopyalama-modu)
-8. [Tmux Yapılandırması](#tmux-yapılandırması)
-9. [İpuçları ve Püf Noktaları](#ipuçları-ve-püf-noktaları)
+7. [Kaydırma-Kopyalama Modu](#kopyalama-modu)
 
 ## Tmux Nedir?
 
-Tmux, tek bir terminal penceresinde birden fazla terminal oturumu oluşturmanıza, bunlar arasında geçiş yapmanıza ve bunları yönetmenize olanak tanıyan bir araçtır.
+Tmux, tek bir terminal penceresinde birden fazla terminal oturumu oluşturmanıza, bunlar arasında geçiş yapmanıza ve bunları yönetmenize olanak tanıyan bir araçtır. Screen kullanımından sonra tmux'un pratik yapısına çok kısa sürede alışacaksınız.
 
 ## Kurulum
 
-Tmux'u kurmak için:
-
 - Ubuntu/Debian: `sudo apt-get install tmux`
-- macOS (Homebrew): `brew install tmux`
-- Fedora: `sudo dnf install tmux`
 
 ## Temel Komutlar
 
 - Tmux'u başlatmak: `tmux`
-- Prefix tuşu: `Ctrl+b` (varsayılan)
+- Son Tmux'a geri dönmek: `tmux a`
+- Her tuşlama öncesi: `Ctrl+b` tuşları bırak. 
 - Tmux'tan çıkmak: `exit` veya `Ctrl+d`
 
 ## Oturumlar (Sessions)
@@ -58,6 +51,3 @@ Tmux'u kurmak için:
 - Metin seçmek: `Space` ile başla, `Enter` ile bitir
 - Yapıştırmak: `Prefix ]`
 
-## Tmux Yapılandırması
-
-Tmux'u özelleştirmek için `~/.tmux.conf` dosyasını kullanabilirsiniz. Örnek:
