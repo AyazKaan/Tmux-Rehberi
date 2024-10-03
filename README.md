@@ -1,4 +1,4 @@
-# Tmux Kullanım Rehberi
+# Tmux Temel Kullanım Rehberi
 
 ## İçindekiler
 
@@ -12,7 +12,9 @@
 
 ## Tmux Nedir?
 
-Tmux, tek bir terminal penceresinde birden fazla terminal oturumu oluşturmanıza, bunlar arasında geçiş yapmanıza ve bunları yönetmenize olanak tanıyan bir araçtır. Screen kullanımından sonra tmux'un pratik yapısına çok kısa sürede alışacaksınız.
+Tek bir terminal penceresinde birden fazla terminal oturumu oluşturmanıza, bunlar arasında geçiş yapmanıza ve bunları yönetmenize olanak tanıyan bir araçtır. Screen kullanımından sonra tmux'un pratik yapısına çok kısa sürede alışacaksınız.
+Basitçe anlamak için 3 katmandan bahsedebiliriz.
+<br>Oturumlar > Pencereler > Bölmeler
 
 ## Kurulum
 
@@ -20,34 +22,35 @@ Tmux, tek bir terminal penceresinde birden fazla terminal oturumu oluşturmanız
 
 ## Temel Komutlar
 
-- Tmux'u başlatmak: `tmux`
-- Son Tmux'a geri dönmek: `tmux a`
-- Her tuşlama öncesi: `Ctrl+b` tuşları bırak. 
-- Tmux'tan çıkmak: `exit` veya `Ctrl+d`
-
-## Oturumlar (Sessions)
-
-- Yeni oturum oluşturmak: `tmux new -s oturum_adı`
-- Oturumları listelemek: `tmux ls`
-- Oturuma bağlanmak: `tmux attach -t oturum_adı`
-- Oturumdan ayrılmak: `Prefix d`
+- Tmux'u başlatmak: `tmux`  (Oturum başlatır.)
+- Son Tmux'a geri dönmek: `tmux a`  (Son oturuma girer.)
+- Her tuşlama öncesi (Prefix): `Ctrl+b` bas ve bırak, işlev tuşuna basabilirsin.
+- Tmux'tan çıkmak (Oturum Detach): `Ctrl+b  d`
 
 ## Pencereler (Windows)
 
-- Yeni pencere oluşturmak: `Prefix c`
-- Pencereler arası geçiş: `Prefix 0-9` veya `Prefix n` (sonraki) / `Prefix p` (önceki)
-- Pencereyi yeniden adlandırmak: `Prefix ,`
+- Yeni pencere oluşturmak: `Ctrl+b  c`
+- Pencereler arası geçiş: `Ctrl+b  0-9` veya `Ctrl+b  n` (sonraki) / `Ctrl+b  p` (önceki)
+- Pencereyi yeniden adlandırmak: `Ctrl+b  ,`
+- Oturum ve pencerelerin tümüne kolay erişim: `Ctrl+b  w`
 
 ## Bölmeler (Panes)
 
-- Dikey bölme: `Prefix %`
-- Yatay bölme: `Prefix "`
-- Bölmeler arası geçiş: `Prefix ok tuşları`
-- Bölmeyi kapatmak: `Prefix x`
+- Dikey bölme: `Ctrl+b  %`
+- Yatay bölme: `Ctrl+b  "`
+- Bölmeler arası geçiş: `Ctrl+b  Yön Tuşları`
+- Bölmeleri boyutlandırma: `Ctrl+b  Ctrl+Yön Tuşları` veya daha uzun adımlarla boyutlandırmak için `Alt+Yön Tuşları`
+- Bölmeleri standart boyutlara oranla:  `Ctrl+b  Space`
+- Bölmeyi yok et: `Ctrl+b  x` y veya n sorar.
 
-## Kopyalama Modu
+ ## Oturumlar (Sessions)
+### Bu adım basitçe "tmux" yazıp başlatmak ve "tmux a" ile son başlatılmış oturuma dönme pratikliğine ters. Katmanları anlamak için kalabilir.
+- Yeni oturum oluşturmak: `tmux new -s oturum_adı`
+- Oturumları listelemek: `tmux ls`
+- Oturumdan ayrılmak: `Ctrl+b  d`
 
-- Kopyalama moduna girmek: `Prefix [`
-- Metin seçmek: `Space` ile başla, `Enter` ile bitir
-- Yapıştırmak: `Prefix ]`
+## Kaydırma-Kopyalama Modu
+
+- Kaydırma ve kopyalama moduna girmek: `Ctrl+b  [`  (Tekerlek ve Page Up/Down)
+
 
