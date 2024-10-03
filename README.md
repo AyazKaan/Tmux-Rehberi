@@ -8,7 +8,7 @@
 4. [Oturumlar (Sessions)](#oturumlar-sessions)
 5. [Pencereler (Windows)](#pencereler-windows)
 6. [Bölmeler (Panes)](#bölmeler-panes)
-7. [Kaydırma-Kopyalama Modu](#kopyalama-modu)
+7. [Kaydırma-Kopyalama Modu](#kaydırma-kopyalama-modu)
 
 ## Tmux Nedir?
 
