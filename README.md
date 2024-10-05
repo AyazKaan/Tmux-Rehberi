@@ -39,7 +39,7 @@ Basitçe anlamak için 3 katmandan bahsedebiliriz.
 - Dikey bölme: `Ctrl+b  %`
 - Yatay bölme: `Ctrl+b  "`
 - Bölmeler arası geçiş: `Ctrl+b  Yön Tuşları`
-- Bölmeleri boyutlandırma: `Ctrl+b  Ctrl+Yön Tuşları` veya daha uzun adımlarla boyutlandırmak için `Alt+Yön Tuşları`
+- Bölmeleri boyutlandırma: `Ctrl+b  Ctrl+Yön Tuşları` ya da `Alt+Yön Tuşları`
 - Bölmeleri standart boyutlara oranla:  `Ctrl+b  Space`
 - Bölmeyi yok et: `Ctrl+b  x` y veya n sorar.
 
