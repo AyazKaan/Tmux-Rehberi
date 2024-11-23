@@ -1,15 +1,5 @@
 # Tmux Temel Kullanım Rehberi
 
-## İçindekiler
-
-1. [Tmux Nedir?](#tmux-nedir)
-2. [Kurulum](#kurulum)
-3. [Temel Komutlar](#temel-komutlar)
-4. [Oturumlar (Sessions)](#oturumlar-sessions)
-5. [Pencereler (Windows)](#pencereler-windows)
-6. [Bölmeler (Panes)](#bölmeler-panes)
-7. [Kaydırma-Kopyalama Modu](#kaydırma-kopyalama-modu)
-
 ## Tmux Nedir?
 
 Tek bir terminal penceresinde birden fazla terminal oturumu oluşturmanıza, bunlar arasında geçiş yapmanıza ve bunları yönetmenize olanak tanıyan bir araçtır. Screen kullanımından sonra tmux'un pratik yapısına çok kısa sürede alışacaksınız.
